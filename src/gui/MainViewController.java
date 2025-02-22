@@ -39,7 +39,7 @@ public class MainViewController implements Initializable {
 
 	@FXML
 	public void onMenuItemAboutAction() {
-		loadView("/gui/about.fxml");
+		loadView("/gui/About.fxml");
 	}
 
 	@Override
@@ -48,7 +48,6 @@ public class MainViewController implements Initializable {
 	}
 
 	private synchronized void loadView(String absoluteName) {
-
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
 			VBox newVBox = loader.load();
@@ -62,7 +61,7 @@ public class MainViewController implements Initializable {
 			mainVBox.getChildren().addAll(newVBox.getChildren());
 
 		} catch (IOException e) {
-			Alerts.showAlert("IO Exceprion", "Error loading view", e.getMessage(), AlertType.ERROR);
+			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
 		}
 	}
 
