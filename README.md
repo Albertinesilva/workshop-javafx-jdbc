@@ -20,27 +20,48 @@ O objetivo deste guia é apresentar os principais conceitos e componentes do Jav
 - **Modelo MVC**: Como o JavaFX segue o padrão MVC (Model-View-Controller) para a organização de código.
 - **Eventos e Interações**: Tratamento de eventos de interação com o usuário, como cliques e digitação.
 - **Componentes Gráficos**: Uso de controles como TextField, Label, ComboBox, e outros componentes para criar interfaces ricas.
-- **Layouts**: Exploração dos principais containers de layout disponíveis no JavaFX, como VBox, HBox, GridPane, e BorderPane.
+- **Layouts**: Exploração dos principais containers de layout disponíveis no JavaFX, como AnchorPane VBox & HBox, GridPane, SplitPane, ScrollPane e BorderPane.
 
 ---
 
-## Visão Geral do JavaFX e MVC 📋
+### 🔍 Visão Geral do JavaFX e MVC  
 
-- **JavaFX** é o sucessor do Swing e Java AWT para a criação de interfaces gráficas com Java.
-- Pode ser utilizado para **aplicações desktop**, **web** e **mobile**.
-- As telas em **JavaFX** podem ser construídas tanto via **código Java** quanto via **FXML**.
-- Após o **Java 11**, o JavaFX não faz mais parte do JDK, sendo necessário fazer o **download e configuração separada**.
-  - O JavaFX é mantido pela **Gluon**: [Gluon JavaFX](https://gluonhq.com/products/javafx/)
-- O **JavaFX** é projetado sobre o padrão **MVC** (Model-View-Controller):
-  - **Model**: Consiste nos dados de domínio e toda a lógica de transformação desses dados.
-  - **View**: São as telas de interação com o usuário (UI).
-  - **Controller**: São as classes responsáveis por tratar as interações do usuário com as views, manipulando os eventos de interação com as telas.
+- **JavaFX** é o sucessor do **Swing** e **Java AWT** para a criação de interfaces gráficas com Java.  
+- Pode ser utilizado para **aplicações desktop, web e mobile**.  
+- As telas em **JavaFX** podem ser construídas tanto via **código Java** quanto via **FXML**.  
+- A partir do **Java 11**, o JavaFX não faz mais parte do **JDK**, sendo necessário fazer o **download e configuração separada**.  
+  - O JavaFX é mantido pela **Gluon**: [Gluon JavaFX](https://gluonhq.com/products/javafx/)  
 
-![Arquitetura JavaFX](conectando_mongoDB_com_repository_e_service.png)
+### 🏗️ JavaFX e o Padrão MVC  
 
-### Conclusão
+O **JavaFX** segue a arquitetura **MVC** (**Model-View-Controller**), que separa a lógica da aplicação em três partes principais:  
 
-#### O JavaFX oferece uma abordagem moderna para a criação de interfaces gráficas em Java, com recursos avançados e integração com outras tecnologias. Com a compreensão dos conceitos e práticas apresentadas neste guia, é possível criar aplicações desktop com uma interface amigável e interativa, explorando os principais componentes e containers de layout disponíveis na plataforma.
-#### Ao seguir as etapas descritas e aplicar os exemplos práticos, você estará pronto para desenvolver aplicações JavaFX robustas e de fácil manutenção, utilizando boas práticas de desenvolvimento como o padrão MVC. O Scene Builder é uma ferramenta poderosa que facilita a criação visual das interfaces, proporcionando uma forma mais ágil e intuitiva de projetar suas telas.
+- **🗄️ Model:** Contém os **dados de domínio** e a **lógica de negócios**.  
+- **🖥️ View:** Responsável pela **interface gráfica** e pela **exibição dos dados** ao usuário.  
+- **🎮 Controller:** Manipula os **eventos de interação**, conectando a **View** ao **Model**.  
 
 ---
+
+### 📌 Arquitetura MVC no JavaFX  
+![Estrutura MVC em JavaFX](arquitetura_javaFX.png)  
+
+- #### [Hierarquia do JavaFX](https://openjfx.io/javadoc/17/overview-tree.html)
+
+---
+
+### 🎓 Conclusão  
+
+Este projeto me proporcionou uma compreensão mais profunda sobre a **arquitetura MVC no JavaFX** e como ela contribui para um código mais organizado e modular. Ao longo do desenvolvimento, aprendi a:  
+
+✔️ Configurar o ambiente do JavaFX e utilizar o Scene Builder para facilitar a criação da interface gráfica.  
+✔️ Aplicar o padrão **MVC** para separar a lógica de negócios, interface e controle dos eventos.  
+✔️ Manipular eventos e interações do usuário de forma eficiente.  
+✔️ Trabalhar com diferentes componentes gráficos do JavaFX, como **Labels, TextFields, ComboBoxes e Botões**.  
+✔️ Explorar os **layouts disponíveis**, garantindo uma interface responsiva e intuitiva.  
+
+O **JavaFX** se mostrou uma ferramenta poderosa para o desenvolvimento de aplicações gráficas modernas e escaláveis. A experiência adquirida nesse projeto fortaleceu meu entendimento sobre **desenvolvimento orientado a objetos**, **componentização** e **boas práticas na criação de interfaces gráficas** com Java. ☕  
+
+--- 
+| 🌎 LinkedIn | 👨‍💻 **Autor** |
+|------------|---------------|
+| [LinkedIn](https://www.linkedin.com/in/albert-backend-java-spring-boot/) | [Albert Silva](https://www.linkedin.com/in/albert-backend-java-spring-boot/) |
